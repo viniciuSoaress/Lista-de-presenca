@@ -14,6 +14,8 @@ export function App() {
    return (
       <main className={style.main}>
 
+         <h1>lista de presença</h1>
+
          <input
             className={style.input}
             type="text"

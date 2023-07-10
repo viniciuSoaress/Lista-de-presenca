@@ -11,7 +11,7 @@ main{
 }
 
 input{
-    width: 50%;
+    width: 60%;
     min-height: 36px;
     border-radius: 8px;
     border: 1px solid;
@@ -20,7 +20,7 @@ input{
 }
 
 button{
-    width: 50%;
+    width: 60%;
     min-height: 36px;
     border: none;
     border-radius: 8px;
