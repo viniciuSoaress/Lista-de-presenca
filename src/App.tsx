@@ -11,32 +11,40 @@ export function App() {
 
 
 
+
    return (
       <main className={style.main}>
 
-         <h1>lista de presença</h1>
+         <header className={style.header}>
+            <h1>lista de presença</h1>
 
-         <input
-            className={style.input}
-            type="text"
-            placeholder='ex: name'
-            onChange={handleNameUser}
-            value={name}
-         />
+            <input
+               className={style.input}
+               type="text"
+               placeholder='ex: name'
+               onChange={handleNameUser}
+               value={name}
+            />
 
-         <button onClick={handleAddUser}>
-            Adicionar
-         </button>
+            <button className={style.button} onClick={handleAddUser}>
+               Adicionar
+            </button>
+         </header>
 
-         {
-            array.map(user => (
-               <Card
-                  key={user.id}
-                  name={user.name}
-                  horario={user.horario}
-               />
-            ))
-         }
+
+         <div className={style.content}>
+            {
+               array.map(user => (
+                  <Card
+                     key={user.id}
+                     name={user.name}
+                     horario={user.horario}
+                  />
+               ))
+            }
+         </div>
+
+
 
 
       </main>
